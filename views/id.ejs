@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del ejercicio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Detalles del ejercicio</h1>
+    <h2>Hola <%= perfil.username %></h2>
+    
+    <%- include('templates/nav_new') -%>
+
+    <table id="info_ejercicio">
+        <tr id="nombre_ejercicio">
+            <th id="nombre_ejercicioth">Nombre: <span id="span_nombre"><%= ejercicio.name %></span></th>
+        </tr>
+        <tr id="fecha_ejercicio">
+            <th id="fecha_ejercicioth">Fecha: <span id="span_fecha"><%= ejercicio.date %></span></th>
+        </tr>
+        <tr id="creador_ejercicio">
+            <th id="creador_ejercicioth">Usuario: <span id="span_user"><%= ejercicio.user %></span></th>
+        </tr>
+        <tr id="calorias_ejercicio">
+            <th id="calorias_ejercicioth">Calorías: <span id="span_calorias"><%= ejercicio.calories %> cal.</span></th>
+        </tr>
+        <tr id="botones_act_elim">
+            <th id="botones_act_elimth"><a href="/exercises/update/<%= ejercicio.id %>" id="actualizar"><%= actualizar %></a> <a href="/exercises/delete/<%= ejercicio.id %>" id="eliminar"><%= eliminar %></a></th>
+        </tr>
+    </table>
+
+    <p><a href="/exercises" id="volver_pagina">Volver a la lista de ejercicios</a></p>
+
+</body>
+</html>

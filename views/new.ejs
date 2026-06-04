@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir ejercicio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Añadir ejercicio</h1>
+    <h2>Hola <%= perfil.username %></h2>
+    
+    <%- include('templates/nav_new') -%>
+
+    <form id="form_datos_entrada" action="new" method="POST">
+
+        <section id="campo_de_entrada">
+            <p id="encabezado">Selecciona un ejercicio:</p>
+            <select name="nombre" id="nombre" required>  
+                <option value="Running">Running</option>
+                <option value="Caminata">Caminata</option>
+                <option value="Natación">Natación</option>
+                <option value="Ciclismo">Ciclismo</option>              
+            </select>
+
+            
+            <p id="encabezado">Fecha:</p>
+            <input type="date" id="fecha" name="fecha" max= <%= fechaMax %> required> 
+            <p id="encabezado">Tiempo:</p>
+            <input type="number" id="tiempo" name="tiempo" required>
+        </section>
+    
+        <button type="submit" id="boton_añadir">Añadir</button>
+    </form>
+
+    <p><a href="/exercises" id="volver_pagina">Volver a la lista de ejercicios</a></p>
+
+</body>
+</html>

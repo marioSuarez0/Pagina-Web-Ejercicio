@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de ejercicios</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Lista de ejercicios</h1>
+    <h2>Hola <%= perfil.username %></h2>
+    
+    <%- include('templates/nav') -%>
+
+    <table id="tabla_ejercicios">
+        <tr>
+            <th id="celda_titulo">Tipo</th>
+            <th id="celda_titulo">Fecha</th>
+            <th id="celda_titulo">Usuario</th>
+            <th id="celda_titulo">Calorías</th>
+            <th id="celda_titulo">Detalles</th>
+        </tr>
+        <tr>
+            <% ejercicios.forEach(ejercicio => { %>
+                <tr id="ejercicios">
+                    <td><%= ejercicio.name %></td>
+                    <td><%= ejercicio.date %></td>
+                    <td><%= ejercicio.user %></td>
+                    <td><%= ejercicio.calories %> cal.</td>
+                    <td><a href="/exercises/<%= ejercicio.id %>">
+                        <p id="ver_ejercicio">Ver ejercicio</p>
+                    </a></td>
+                </tr>
+            <% }); %>
+        </tr> 
+        
+        
+    </table>
+
+</body>
+</html>

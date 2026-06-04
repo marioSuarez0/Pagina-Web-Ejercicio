@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Registro</h1>
+
+    <p id="mensaje_aviso"><%= mensaje_register %></p>
+
+    <form id="form_datos_entrada" action="/register" method="POST">
+
+        <section id="campo_de_entrada">
+            <p id="encabezado">Nombre de usuario:</p>
+            <input type="text" id="nombre_usuario" name="nombre_usuario" required>
+            <p id="encabezado">Contraseña:</p>
+            <input type="password" id="contrasenia" name="contrasenia" required>
+            <p id="encabezado">Edad:</p>
+            <input type="number" id="edad" name="edad" required>
+            <p id="encabezado">Peso:</p>
+            <input type="number" id="peso" name="peso" required>
+            <p id="encabezado">Altura:</p>
+            <input type="number" id="altura" name="altura" required>
+        </section>
+    
+        <button type="submit" id="boton_registrar">Registrar</button>
+    </form>
+
+    <form action="/login" method="GET">
+        <p id="enlace_logregister">Si ya tiene una cuenta, inicie sesión <a href="/login">AQUÍ</a></p>
+    </form>
+
+</body>
+</html>

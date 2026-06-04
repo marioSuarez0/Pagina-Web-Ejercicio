@@ -1,0 +1,252 @@
+/*General*/
+h1 {
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 200%;
+}
+
+h2 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 120%;
+    margin-right: 5%;
+    margin-left: 1%;
+    padding-bottom: 0.7%;
+    text-align: right;
+    border-bottom:solid 3px black;
+}
+
+#volver_pagina, #actualizar, #eliminar, #volver_pagina_exercises, #volver_pagina_login {
+    font-family: 'Helvetica', sans-serif;
+    color: darkgoldenrod;
+    margin: 1%;
+}
+
+#mensaje_aviso {
+    font-family: 'Helvetica', sans-serif;
+    margin-left: 1%;
+}
+
+/*Login y register*/
+#form_datos_entrada, #form_datos_update {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+form {
+    text-align: center;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Helvetica', sans-serif;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button {
+    background-color:darkgoldenrod; 
+    color: white;
+    padding: 3% ;
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer;
+    font-size: 90%;
+    margin-top: 5%; 
+    width: 50%;
+    align-self: center;
+}
+
+#encabezado {
+    margin-bottom: 5px;
+    color: darkgoldenrod;
+    text-align: left;
+}
+
+#campo_de_entrada input {
+    border-radius: 3px;
+    border: 2px solid;
+    border-color:  #9c9c9c;
+    width: 100%;
+    height: 20px;
+    padding: 0.5%;
+    border-width: 1px;
+}
+
+#campo_de_entrada select{
+    border-radius: 3px;
+    border: 2px solid;
+    border-color:  #9c9c9c;
+    width: 101%;
+    height: 30px;
+    border-width: 1px;
+}
+
+#campo_de_entrada { 
+    font-family: 'Helvetica', sans-serif;   
+}
+
+#enlace_logregister {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: darkgoldenrod;
+}
+
+/*Nav*/
+nav{
+    margin: 1%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+nav a{
+    cursor: pointer;
+    border-radius: 5%;
+    border: 0px;
+    font-size: 85%;
+}
+
+nav a:hover {
+    background-color: rgba(184, 135, 11, 0.795);
+}
+
+#logout{
+    background-color:red;
+    color: white;
+    margin-left: 0%;
+    padding: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-radius: 0%;
+}
+
+#Nuevo_ejercicio, #Todos_los_ejercicios,#Ranking,#Mis_ejercicios, #Mi_perfil {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 1%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    transition: background-color 1s;
+}
+
+/*Exercises, ranking, user*/
+#tabla_ejercicios {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 85%;
+    width: 98%;
+    margin:1%;
+    border-collapse: collapse;
+}
+
+#celda_titulo {
+    padding: 0.7%;
+    text-align: left;
+    color: white;
+    background-color: darkgoldenrod;
+}
+
+td{
+    padding: 0.7%;
+    text-align: left;
+    
+}
+
+#ejercicios:hover {
+    background-color: rgba(128, 128, 128, 0.308);
+}
+
+#ver_ejercicio {
+    color:darkgoldenrod;
+
+}
+
+caption{
+    padding: 0.7%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(184, 135, 11, 0.781);
+}
+
+/*Profile y updateProfile*/
+#form_datos_entrada_p, #form_datos_update {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 4%;
+}
+
+#mensaje_alerta{
+    font-family: 'Helvetica', sans-serif;
+    margin-left: 1%;
+    margin-top: 2%;
+    color: black;
+}
+
+/*Info ejercicios*/
+#info_ejercicio {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 85%;
+    width: 98%;
+    margin:1%;
+    border-collapse: collapse;
+    margin-top: 2%;
+}
+
+#nombre_ejercicio, #creador_ejercicio, #botones_act_elim {
+    font-family: 'Helvetica', sans-serif;
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+    padding-left: 0.5%;
+    text-align: left;    
+}
+
+#fecha_ejercicio, #calorias_ejercicio {
+    font-family: 'Helvetica', sans-serif;
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+    padding-left: 0.5%;
+    text-align: left;
+    background-color: #9c9c9c34;
+}
+
+#nombre_ejercicio:hover, #fecha_ejercicio:hover, #creador_ejercicio:hover, #calorias_ejercicio:hover {
+    background-color: rgba(128, 128, 128, 0.308);
+}
+
+
+#nombre_ejercicioth, #fecha_ejercicioth, #creador_ejercicioth, #calorias_ejercicioth, #botones_act_elimth  {
+    font-size: 120%;
+    padding: 0.7%;
+    text-align: left; 
+}
+
+#info_ejercicio span{
+    margin-inline-start: 30%;
+    font-weight: normal; 
+}
+
+#botones_act_elimth a {
+    font-weight: normal;
+    margin-left: 0%;
+
+}
+
+#form_datos_delete p {
+    font-family: 'Helvetica', sans-serif;
+}

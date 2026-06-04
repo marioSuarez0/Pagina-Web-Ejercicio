@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar ejercicio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Eliminar ejercicio</h1>
+    <h2>Hola <%= perfil.username %></h2>
+    
+    <%- include('templates/nav_new') -%>
+
+    <form id="form_datos_delete" action="/exercises/delete" method="POST">
+        <p>¿Estás seguro de que quieres eliminar el ejercicio "<%= ejercicio.name %>"?</p>
+        <button type="submit" id="boton_actualizar">Eliminar ejercicio</button>
+
+        <input type="hidden" id="id_ejercicio" name="id_ejercicio" value="<%= ejercicio.id %>">
+    </form>
+
+    <p><a href="/exercises/<%= ejercicio.id %>" id="volver_pagina">Cancelar</a></p>
+
+</body>
+</html>

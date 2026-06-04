@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Mi perfil</h1>
+    <h2>Hola <%= perfil.username %></h2>
+    
+    <%- include('templates/nav') -%>
+    <p id="mensaje_aviso">El usuario ha sido modificado con éxito</p>
+
+    <form id="form_datos_entrada" action="/updateProfile" method="POST">
+    
+        <section id="campo_de_entrada">
+            <p id="encabezado">Edad:</p>
+            <input type="number" id="edad" name="edad" value="<%= perfil.age %>">
+            <p id="encabezado">Peso:</p>
+            <input type="number" id="peso" name="peso" value="<%= perfil.weight %>">
+            <p id="encabezado">Altura:</p>
+            <input type="number" id="altura" name="altura" value="<%= perfil.height %>">
+        </section>
+    
+        <button type="submit" id="boton_actualizar">Actualizar perfil</button>
+    </form>
+
+    <p><a href="/exercises" id="volver_pagina">Volver a la lista de ejercicios</a></p>
+
+</body>
+</html>
